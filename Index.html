@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Averest Weighing Machines Company (PVT) Ltd | Mathugama</title>
+<meta name="description" content="Averest Weighing Machines – digital, counter, platform, barcode, precision and crane scales in Mathugama, Sri Lanka.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{display:['Orbitron','sans-serif'],body:['"Space Grotesk"','sans-serif']},colors:{ink:'#05070f',panel:'#0b1020',neon:'#22d3ee',volt:'#3b82f6',amber:'#fbbf24'}}}}
+</script>
+<style>
+body{background:#05070f;font-family:'Space Grotesk',sans-serif}
+.grid-bg{background-image:linear-gradient(rgba(34,211,238,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(34,211,238,.07) 1px,transparent 1px);background-size:48px 48px}
+.glass{background:rgba(255,255,255,.04);backdrop-filter:blur(14px);border:1px solid rgba(34,211,238,.18)}
+.glow{box-shadow:0 0 40px -8px rgba(34,211,238,.6)}
+.text-grad{background:linear-gradient(90deg,#22d3ee,#3b82f6,#a5f3fc);-webkit-background-clip:text;color:transparent}
+.card:hover{transform:translateY(-8px);box-shadow:0 20px 50px -15px rgba(34,211,238,.45);border-color:rgba(34,211,238,.6)}
+.card{transition:.4s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.float{animation:float 6s ease-in-out infinite}
+@keyframes scan{0%{top:0}100%{top:100%}}
+.scan::after{content:"";position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#22d3ee,transparent);animation:scan 3s linear infinite}
+.lcd{font-family:Orbitron;text-shadow:0 0 12px #22d3ee}
+</style>
+</head>
+<body class="text-slate-200 overflow-x-hidden">
+
+<header id="nav" class="fixed top-0 inset-x-0 z-50 transition">
+ <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+  <a href="#" class="flex items-center gap-3">
+   <span class="w-10 h-10 rounded-lg bg-gradient-to-br from-neon to-volt grid place-items-center glow"><i class="fa-solid fa-scale-balanced text-ink"></i></span>
+   <span class="font-display font-black tracking-widest text-white leading-none">AVEREST<br><span class="text-[10px] tracking-[.3em] text-neon font-medium">WEIGHING MACHINES</span></span>
+  </a>
+  <nav class="hidden md:flex gap-8 text-sm">
+   <a href="#products" class="hover:text-neon">Products</a><a href="#why" class="hover:text-neon">Why Us</a><a href="#services" class="hover:text-neon">Services</a><a href="#contact" class="hover:text-neon">Contact</a>
+  </nav>
+  <a href="https://wa.me/94776763343" target="_blank" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-neon text-ink font-bold text-sm glow hover:scale-105 transition"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+  <button id="menuBtn" class="md:hidden text-2xl text-neon"><i class="fa-solid fa-bars"></i></button>
+ </div>
+ <div id="mobileMenu" class="hidden md:hidden glass mx-4 rounded-xl p-5 flex flex-col gap-4">
+  <a href="#products">Products</a><a href="#why">Why Us</a><a href="#services">Services</a><a href="#contact">Contact</a>
+ </div>
+</header>
+
+<section class="relative min-h-screen grid-bg flex items-center pt-28 pb-16">
+ <div class="absolute -top-40 -left-40 w-[500px] h-[500px] bg-neon/20 blur-[140px] rounded-full"></div>
+ <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-volt/20 blur-[140px] rounded-full"></div>
+ <div class="relative max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
+  <div data-aos="fade-right">
+   <span class="inline-flex items-center gap-2 glass px-4 py-1.5 rounded-full text-xs tracking-widest text-neon"><span class="w-2 h-2 bg-neon rounded-full animate-pulse"></span> PRECISION · TRUST · TECHNOLOGY</span>
+   <h1 class="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white mt-6 leading-tight">The Future of <span class="text-grad">Accurate</span> Weighing</h1>
+   <p class="mt-6 text-slate-400 text-lg max-w-xl">Averest Weighing Machines Company (PVT) Ltd delivers smart digital scales for shops, supermarkets, industries and laboratories across Sri Lanka.</p>
+   <div class="mt-8 flex flex-wrap gap-4">
+    <a href="#products" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-neon to-volt text-ink font-bold glow hover:scale-105 transition">Explore Products</a>
+    <a href="tel:+94776763343" class="px-7 py-3.5 rounded-full glass hover:border-neon transition"><i class="fa-solid fa-phone mr-2 text-neon"></i>+94 77 676 3343</a>
+   </div>
+   <div class="mt-12 grid grid-cols-3 gap-4 max-w-md">
+    <div><p class="font-display text-3xl text-white"><span class="count" data-to="1500">0</span>+</p><p class="text-xs text-slate-500">Happy Clients</p></div>
+    <div><p class="font-display text-3xl text-white"><span class="count" data-to="50">0</span>+</p><p class="text-xs text-slate-500">Scale Models</p></div>
+    <div><p class="font-display text-3xl text-white"><span class="count" data-to="24">0</span>/7</p><p class="text-xs text-slate-500">Support</p></div>
+   </div>
+  </div>
+  <div class="relative" data-aos="zoom-in">
+   <div class="relative glass rounded-3xl p-3 glow scan overflow-hidden float">
+    <img src="images/hero-scale.jpg" alt="Futuristic digital weighing scale" class="rounded-2xl w-full">
+   </div>
+   <div class="absolute -bottom-6 -left-4 glass rounded-2xl px-5 py-4">
+    <p class="text-[10px] tracking-widest text-slate-400">LIVE READING</p>
+    <p class="lcd text-3xl text-neon"><span id="lcd">0.000</span> kg</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="products" class="py-24 relative">
+ <div class="max-w-7xl mx-auto px-5">
+  <div class="text-center" data-aos="fade-up">
+   <p class="text-neon tracking-[.3em] text-xs">OUR RANGE</p>
+   <h2 class="font-display text-3xl md:text-5xl font-bold text-white mt-3">Featured <span class="text-grad">Scales</span></h2>
+  </div>
+  <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-7" id="productGrid"></div>
+ </div>
+</section>
+
+<section id="why" class="py-24 grid-bg">
+ <div class="max-w-7xl mx-auto px-5">
+  <div class="text-center" data-aos="fade-up"><p class="text-neon tracking-[.3em] text-xs">WHY AVEREST</p><h2 class="font-display text-3xl md:text-5xl font-bold text-white mt-3">Built for <span class="text-grad">Precision</span></h2></div>
+  <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+   <div class="glass card rounded-2xl p-7" data-aos="fade-up"><i class="fa-solid fa-certificate text-3xl text-neon"></i><h3 class="font-display text-white mt-5">Certified Accuracy</h3><p class="text-sm text-slate-400 mt-2">Calibrated scales meeting measurement standards.</p></div>
+   <div class="glass card rounded-2xl p-7" data-aos="fade-up" data-aos-delay="100"><i class="fa-solid fa-shield-halved text-3xl text-neon"></i><h3 class="font-display text-white mt-5">Warranty</h3><p class="text-sm text-slate-400 mt-2">Reliable warranty on every machine we sell.</p></div>
+   <div class="glass card rounded-2xl p-7" data-aos="fade-up" data-aos-delay="200"><i class="fa-solid fa-screwdriver-wrench text-3xl text-neon"></i><h3 class="font-display text-white mt-5">Repairs & Service</h3><p class="text-sm text-slate-400 mt-2">Expert repair and calibration for all brands.</p></div>
+   <div class="glass card rounded-2xl p-7" data-aos="fade-up" data-aos-delay="300"><i class="fa-solid fa-truck-fast text-3xl text-neon"></i><h3 class="font-display text-white mt-5">Island-wide Delivery</h3><p class="text-sm text-slate-400 mt-2">Fast delivery and setup anywhere in Sri Lanka.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="services" class="py-24">
+ <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
+  <div data-aos="fade-right">
+   <p class="text-neon tracking-[.3em] text-xs">SERVICES</p>
+   <h2 class="font-display text-3xl md:text-5xl font-bold text-white mt-3">Complete <span class="text-grad">Weighing</span> Solutions</h2>
+   <ul class="mt-8 space-y-4">
+    <li class="flex gap-4 glass rounded-xl p-4"><i class="fa-solid fa-circle-check text-neon mt-1"></i><span>Sales of counter, platform, barcode & crane scales</span></li>
+    <li class="flex gap-4 glass rounded-xl p-4"><i class="fa-solid fa-circle-check text-neon mt-1"></i><span>Calibration & licensing support</span></li>
+    <li class="flex gap-4 glass rounded-xl p-4"><i class="fa-solid fa-circle-check text-neon mt-1"></i><span>Repair, spare parts & maintenance</span></li>
+    <li class="flex gap-4 glass rounded-xl p-4"><i class="fa-solid fa-circle-check text-neon mt-1"></i><span>Custom industrial weighbridge consultation</span></li>
+   </ul>
+  </div>
+  <div class="grid grid-cols-2 gap-5" data-aos="fade-left">
+   <img src="images/barcode-scale.jpg" class="rounded-2xl bg-white" alt="Barcode scale">
+   <img src="images/hanging-scale.jpg" class="rounded-2xl bg-white mt-10" alt="Crane scale">
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="py-24 grid-bg">
+ <div class="max-w-5xl mx-auto px-5">
+  <div class="glass rounded-3xl p-8 md:p-14 glow text-center" data-aos="zoom-in">
+   <h2 class="font-display text-3xl md:text-4xl font-bold text-white">Need the <span class="text-grad">Perfect Scale?</span></h2>
+   <p class="text-slate-400 mt-4">Chat with us on WhatsApp for prices and expert advice.</p>
+   <div class="mt-10 grid md:grid-cols-2 gap-5 text-left">
+    <a href="https://wa.me/94776763343" target="_blank" class="glass card rounded-2xl p-6 flex gap-4 items-center"><i class="fa-brands fa-whatsapp text-4xl text-green-400"></i><div><p class="text-xs text-slate-400">WhatsApp / Call</p><p class="font-display text-white">+94 77 676 3343</p></div></a>
+    <div class="glass card rounded-2xl p-6 flex gap-4 items-center"><i class="fa-solid fa-location-dot text-4xl text-neon"></i><div><p class="text-xs text-slate-400">Visit Us</p><p class="text-white">No. 210, Aluthgama Road, Mathugama</p></div></div>
+   </div>
+   <iframe class="mt-8 w-full h-64 rounded-2xl border border-neon/20" loading="lazy" src="https://maps.google.com/maps?q=Aluthgama%20Road%20Mathugama&z=15&output=embed"></iframe>
+  </div>
+ </div>
+</section>
+
+<footer class="border-t border-neon/10 py-8 text-center text-sm text-slate-500">© <span id="yr"></span> Averest Weighing Machines Company (PVT) Ltd. All rights reserved.</footer>
+
+<a href="https://wa.me/94776763343" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-green-500 grid place-items-center text-white text-3xl shadow-lg animate-bounce"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+const products=[
+ ["counter-scale.jpg","Price Computing Scale","30kg trade counter with dual display"],
+ ["platform-scale.jpg","Platform Scale","150kg–300kg heavy duty steel platform"],
+ ["barcode-scale.jpg","Barcode Label Scale","Supermarket label printing scale"],
+ ["precision-scale.jpg","Precision Balance","0.0001g lab-grade analytical balance"],
+ ["hanging-scale.jpg","Crane Scale","Up to 1 ton digital hanging scale"],
+ ["hero-scale.jpg","Smart Compact Scale","Touch-control kitchen & shop scale"]];
+document.getElementById('productGrid').innerHTML=products.map((p,i)=>`
+ <div class="glass card rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="${i*80}">
+  <div class="bg-white aspect-square overflow-hidden"><img src="images/${p[0]}" alt="${p[1]}" loading="lazy" class="w-full h-full object-cover hover:scale-110 transition duration-500"></div>
+  <div class="p-6"><h3 class="font-display text-white text-lg">${p[1]}</h3><p class="text-sm text-slate-400 mt-1">${p[2]}</p>
+  <a href="https://wa.me/94776763343?text=${encodeURIComponent('Hi, I need details about '+p[1])}" target="_blank" class="mt-5 inline-flex items-center gap-2 text-neon text-sm font-bold">Get Price <i class="fa-solid fa-arrow-right"></i></a></div>
+ </div>`).join('');
+AOS.init({once:true,duration:800});
+document.getElementById('yr').textContent=new Date().getFullYear();
+menuBtn.onclick=()=>mobileMenu.classList.toggle('hidden');
+addEventListener('scroll',()=>nav.classList.toggle('glass',scrollY>40));
+document.querySelectorAll('.count').forEach(el=>{let t=+el.dataset.to,c=0,s=Math.ceil(t/60);const i=setInterval(()=>{c+=s;if(c>=t){c=t;clearInterval(i)}el.textContent=c},25)});
+setInterval(()=>{lcd.textContent=(Math.random()*25).toFixed(3)},1500);
+</script>
+</body></html>
